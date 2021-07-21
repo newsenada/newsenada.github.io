@@ -1,107 +1,203 @@
-body { /*menggunakan type selector*/
-   font-family: sans-serif; 
-   margin: 0; /*kita kasih nilai margin dan padding 0 pada body maka akan akan memenuhi seluruh lebar dan tinggi dari jendela browser. */
-   padding: 0; /*lebih baik menggunakan padding di main*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-h2, h3 { /* kalau mau h2 dan h3 warnanya sama, supaya gaada tulisan kode yg berulang */
-   color: #00a2c6
-}
- 
-footer { /*type selector*/
-   padding: 20px; /*untuk paddingnya*/
-   color: white; /*ini untuk penulisan teks footernya jadi warna putih*/ 
-   background-color: #00a2c6; /*ini untuk baground color paddingnya*/ 
-   text-align: center; /*ini untuk posisi text foternya*/
-   font-weight: bold; /*ini untuk ketebalan teksnya*/
+body {
+	background-color: grey;
+	background-image: url(../assets/body.png);
 }
 
-nav a { /*untuk navigasi dan anchornya*/
-   font-size: 18px; /*mengatur ukuran font*/
-   font-weight: 400; /*mengatur ketebalan teks*/
-   text-decoration: none; /*mendekorasi text anchornya supaya engga ada garisnya(none)*/
-   color: white;
-}
-
-nav a:hover { /*ini untuk pseudo selectornya*/
-   font-weight: bold; /*untuk ukuran teksnya si anchor*/
-}
-
-
-.profile header { /*pada profile card sebenernya profile doang dan yg ada turunannya header*/
-   text-align: center; 
-}
-
-
-.featured-image { /*menggunakan class selector*/
-   width: 100%; /*lebar gambarnya 100*/
-   max-height: 300px; /*batas tinggi maksimal gambarnya 300 dan karna kita kasih max hight maka jadi tidak proporsional kualitas gambarnya*/
-   object-fit: cover; /*kualitas rasio gambarnya terjaga/bagus*/
-   object-position: center; /*objeknya ada ditengah*/
-}
-
-.profile img { /*profile img ini untuk class profile imagenya aja*/ 
-   width: 200px; 
-}
-
-.card { /*class selector*/
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /*0(satu) 4px(dua) 8px(tiga) 0(empat) rgba(lima)*/ 
-   border-radius: 5px; /*untuk radius setiap ujung garisnya*/
-   padding: 20px; /*padding untuk jarak content sama box paddingnya*/
-   margin-top: 20px; /*margin atasnya 20px*/
-}
-
-
-.jumbotron { /*class selector*/
-   font-size: 20px; 
-   padding: 60px;
-   background-color: #00c8eb;
-   text-align: center;
-   color: white;
-}
-
-
-nav li { 
-   display: inline; /*biar jadi horizontal*/
-   list-style-type: none; /*biar gaad titik di setiap listnya*/
-   margin-right: 20px;
-}
-
-main { /*type selector pada main*/
-   padding: 20px; /*jarak main sama kontent nya, dan padding gabisa pake tanda (-) dan jg auto*/ 
-   overflow: auto;
-}
-
-#content { /*id selector*/
-   float: left; /*lepas darui normal flow dan karna kita pengen content ada disebelah kiri*/
-   width: 75%; /*ini untuk lebar conten nya 75% berarti uuntuk lebar asidenya 25% yg sama aja 75 + 25 = 100 maksimalnya*/
-}
-
-aside {
-   float: right; /*karna aside pengen kita taro dikanan dan otomatis lepas dari normal flow yg artinya ga merubah content*/
-   width: 25%;
-   padding-left: 20px; /*kita pake padding yg artinya si lebar/width nya udah engga 25% maka dari itu kita ubah dengan box-sizing supaya sesuai*/
-}
-
-* {  /*untuk semua pake tanda bintang*/  
-   box-sizing: border-box; /*ini untuk asidenya supaya sesuai sama yg kita atur*/
-}
-
-@media screen and (max-width: 1000px) { /*ini untuk max width yaitu 100% pada layar hp (pokonya ini cara kalau mau enak diliat pas di hp nya)*/
-   #content, /*kita taro si aside dibawah si content nya*/
-   aside {
-       width: 100%; /*ini kita atur sendiri lebarnya 100% karna max-width nya 1000px*/
-       padding: 0; /*padding kita isi 0*/
-   }
-}
-
-nav {
-   background-color: black;
-   padding: 5px;
-   position: sticky; /*sicky supaya bisa melekat nempel pada jendela browser*/
-   top: 0; /*Nilai top diperlukan agar ketika pengguna melakukan scrolling, elemen navigasi tetap berada di atas jendela browser.*/
+main {
+	overflow: auto;
 }
 
 header {
-   display: inline; /*karna si header adalah induk dari elemen nav supaya nempel si navigasinya dengan header*/
+	display: inline;
+}
+
+.jumbotron {
+	padding: 60px;
+}
+
+.container {
+	width: 960px;
+	margin: auto;
+	background-color: white;
+}
+
+.about {
+	width: 300px;
+	float: right;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /*0(satu) 4px(dua) 8px(tiga) 0(empat) rgba(lima)*/ 
+    border-radius: 5px; /*untuk radius setiap ujung garisnya*/
+    padding: 20px; /*padding untuk jarak content sama box paddingnya*/
+    margin-top: 20px; /*margin atasnya 20px*/
+    margin-right: 20px;
+}
+
+.about img {
+	width: 70px;
+	float: left;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.about h3 {
+	margin-top: 20px;
+}
+
+.about p{
+	font-size: 13px;
+	margin-top: 10px;
+}
+
+header h1, header p {
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+nav li {
+	margin-top: 5px;
+	display: inline-block;
+	margin-right: 15px;
+	list-style-type: none;
+} 
+
+nav {
+	position: sticky;
+	top: 0;
+	background-color: red;
+	padding: 20px;
+}
+
+nav a {
+	text-decoration: none;
+	color: yellow;
+}
+
+nav a:hover {
+	color: lightskyblue;
+	font-weight: bold;
+}
+
+.gambar {
+	border-top: 5px solid salmon;
+	height: 350px;
+	background-size: cover;
+	background-image: url(../assets/gambar.jpg);
+	background-position: 0 -140px;
+	border-bottom: 5px solid lightblue;
+}
+
+
+
+.content {
+	padding: 15px;
+	width: 600px;
+	float: left;
+}
+
+.content p {
+	margin-bottom: 10px;
+	font-family: arial, verdana, sans-serif;
+	font-size: 12px;
+	text-align: justify;
+}
+
+.content a{
+	text-decoration: none;
+	color: red;
+}
+
+.content a:hover {
+	color: salmon;
+}
+
+footer {
+	text-align: center;
+	color: whitesmoke;
+	font-weight: bold;
+	padding: 15px;
+	background-color: lightcoral;
+}
+
+.share {
+	margin-top: 20px;
+	width: 300px;
+	float: right;
+	box-shadow: ;
+	padding: 10px;
+	position: relative;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /*0(satu) 4px(dua) 8px(tiga) 0(empat) rgba(lima)*/ 
+    border-radius: 5px; /*untuk radius setiap ujung garisnya*/
+    padding: 20px; /*padding untuk jarak content sama box paddingnya*/
+    margin-top: 20px; /*margin atasnya 20px*/
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.share h3 {
+	text-align: center;
+}
+
+.share img {
+	width: 50px;
+	margin-top: 25px;
+}
+
+.share a {
+	list-style-type: none;
+	text-decoration: none;
+	display: block;
+	color: lightgreen;
+}
+
+.share a p:hover {
+	border: 2px solid lightskyblue;
+}
+
+.share .fb {
+	position: absolute;
+	left: 80px;
+	bottom: 275px;
+	background-color: darkgoldenrod;
+	height: 20px;
+	width: 100px;
+	border-radius: 50px;
+	text-align: center;
+}
+
+.share .ig {
+	height: 20px;
+	width: 100px;
+	border-radius: 50px;
+	text-align: center;
+	position: absolute;
+	left: 80px;
+	bottom: 200px;	
+	background-color: darkgoldenrod;
+}
+
+.share .twit {
+	height: 20px;
+	width: 100px;
+	border-radius: 50px;
+	text-align: center;
+	position: absolute;
+	left: 80px;
+	bottom: 120px;
+	background-color: darkgoldenrod;
+}
+
+.share .link {
+	height: 20px;
+	width: 100px;
+	border-radius: 50px;
+	text-align: center;
+	background-color: darkgoldenrod;
+	position: absolute;
+	left: 80px;
+	bottom: 40px;
 }
