@@ -1,203 +1,34 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-	background-color: grey;
-	background-image: url(../assets/body.png);
+    background-image: url(../assets/image/2.jpg);
+    background-size: 100% 700px; /*pake cara ini supya bisa atur lebar dan tinggi gambar bagroundnya, value pertama x dan value kedua y*/
 }
 
-main {
-	overflow: auto;
+img {
+    margin-left: -150px;
+    margin-top: -200px;
+    width: 400px;
+    height: 400px;
+    object-position: cover;
 }
 
-header {
-	display: inline;
+.row {
+    margin-top: 20%;
 }
 
-.jumbotron {
-	padding: 60px;
+.row p {
+    color: white;
 }
 
-.container {
-	width: 960px;
-	margin: auto;
-	background-color: white;
-}
-
-.about {
-	width: 300px;
-	float: right;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /*0(satu) 4px(dua) 8px(tiga) 0(empat) rgba(lima)*/ 
-    border-radius: 5px; /*untuk radius setiap ujung garisnya*/
-    padding: 20px; /*padding untuk jarak content sama box paddingnya*/
-    margin-top: 20px; /*margin atasnya 20px*/
-    margin-right: 20px;
-}
-
-.about img {
-	width: 70px;
-	float: left;
-	margin-right: 10px;
-	margin-top: 10px;
-}
-
-.about h3 {
-	margin-top: 20px;
-}
-
-.about p{
-	font-size: 13px;
-	margin-top: 10px;
-}
-
-header h1, header p {
-	margin-bottom: 15px;
-	text-align: center;
-}
-
-nav li {
-	margin-top: 5px;
-	display: inline-block;
-	margin-right: 15px;
-	list-style-type: none;
-} 
-
-nav {
-	position: sticky;
-	top: 0;
-	background-color: red;
-	padding: 20px;
-}
-
-nav a {
-	text-decoration: none;
-	color: yellow;
-}
-
-nav a:hover {
-	color: lightskyblue;
-	font-weight: bold;
-}
-
-.gambar {
-	border-top: 5px solid salmon;
-	height: 350px;
-	background-size: cover;
-	background-image: url(../assets/gambar.jpg);
-	background-position: 0 -140px;
-	border-bottom: 5px solid lightblue;
-}
-
-
-
-.content {
-	padding: 15px;
-	width: 600px;
-	float: left;
-}
-
-.content p {
-	margin-bottom: 10px;
-	font-family: arial, verdana, sans-serif;
-	font-size: 12px;
-	text-align: justify;
-}
-
-.content a{
-	text-decoration: none;
-	color: red;
-}
-
-.content a:hover {
-	color: salmon;
-}
-
-footer {
-	text-align: center;
-	color: whitesmoke;
-	font-weight: bold;
-	padding: 15px;
-	background-color: lightcoral;
-}
-
-.share {
-	margin-top: 20px;
-	width: 300px;
-	float: right;
-	box-shadow: ;
-	padding: 10px;
-	position: relative;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /*0(satu) 4px(dua) 8px(tiga) 0(empat) rgba(lima)*/ 
-    border-radius: 5px; /*untuk radius setiap ujung garisnya*/
-    padding: 20px; /*padding untuk jarak content sama box paddingnya*/
-    margin-top: 20px; /*margin atasnya 20px*/
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
-
-.share h3 {
-	text-align: center;
-}
-
-.share img {
-	width: 50px;
-	margin-top: 25px;
-}
-
-.share a {
-	list-style-type: none;
-	text-decoration: none;
-	display: block;
-	color: lightgreen;
-}
-
-.share a p:hover {
-	border: 2px solid lightskyblue;
-}
-
-.share .fb {
-	position: absolute;
-	left: 80px;
-	bottom: 275px;
-	background-color: darkgoldenrod;
-	height: 20px;
-	width: 100px;
-	border-radius: 50px;
-	text-align: center;
-}
-
-.share .ig {
-	height: 20px;
-	width: 100px;
-	border-radius: 50px;
-	text-align: center;
-	position: absolute;
-	left: 80px;
-	bottom: 200px;	
-	background-color: darkgoldenrod;
-}
-
-.share .twit {
-	height: 20px;
-	width: 100px;
-	border-radius: 50px;
-	text-align: center;
-	position: absolute;
-	left: 80px;
-	bottom: 120px;
-	background-color: darkgoldenrod;
-}
-
-.share .link {
-	height: 20px;
-	width: 100px;
-	border-radius: 50px;
-	text-align: center;
-	background-color: darkgoldenrod;
-	position: absolute;
-	left: 80px;
-	bottom: 40px;
+form {
+    margin-top: -50px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
 }
