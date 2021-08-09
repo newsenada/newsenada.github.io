@@ -1,1 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+@font-face {
+	font-family: 'fontHeader';
+	src: url(../../assets/font/chunk_five_print-webfont.woff) format('woff');
+}
+
+body {
+    background-color: #FFEFD5;
+    overflow: hidden;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3.5px solid rgba(0, 0, 0, 1);
+}
+
+h1 {
+    font-family: 'fontHeader', Arial, Helvetica, sans-serif;
+    color: violet;
+    text-align: center;
+    font-size: 80px;
+    margin-top: 20px;
+    text-shadow: 5px -5px 5px yellow, -5px 5px 5px red;
+    transform: skew(-10deg);
+}
+
+.tes h3 {
+    margin-top: 30px;
+    overflow: hidden; /* memastikan konten tidak tampil sebelum animasi dimulai */
+  
+    white-space: nowrap; /* tetap menjaga konten berada pada satu garis */
+    margin: 0 auto; /* membuat efek scrolling pada saat animasi berjalan */
+    
+    font-family: Arial, Helvetica, sans-serif;
+    animation: 
+      typing 7.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+      font-size: 10px;
+}
+
+.atas {
+    background-color: lightskyblue;
+    width: 900px;
+    margin: auto;
+    overflow: auto;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.atas a {
+    color: salmon;
+    font-weight: bold;
+}
+
+.atas a:hover {
+    color: purple;
+    text-decoration: none;
+}
+
+.atas li {
+    margin-right: 20px;
+    float: left;
+    list-style-type: none;
+}
+
+footer {
+    width: 900px;
+    margin: auto;
+    padding: 10px;
+    background-color: grey;
+}
+
+footer i {
+    color: red;
+}
+
+footer p,
+footer a {
+    color: black;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: yellow;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
