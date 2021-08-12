@@ -7,6 +7,7 @@
 body {
     background-image: url(../assets/image/2.jpg);
     background-size: 100% 700px; /*pake cara ini supya bisa atur lebar dan tinggi gambar bagroundnya, value pertama x dan value kedua y*/
+    height: 800px
 }
 
 img {
