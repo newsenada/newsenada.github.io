@@ -12,6 +12,7 @@
 body {
     background-color: #FFEFD5;
     overflow: hidden;
+    height: 800px;
 }
 
 img {
